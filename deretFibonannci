@@ -1,26 +1,41 @@
-#include <iostream>
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 
-using namespace std;
+package deretfibonannci;
 
-int a, b, c;
-int nilai;
+import java.util.Scanner;
 
+/**
+ *
+ * @author Praktikum
+ */
+public class DeretFibonannci {
 
-int main()
-{
-    cout << "Program deret Fibonanci" << endl;
-    cout << "Input  : " << endl;
-    cin >> nilai;
-
-    cout << "Output : " << endl;
-    a=1; b=0;
-    cout << a << b << endl;
-    for(int i=0; i<=nilai; i++){
-    c = a+b;
-    a = b;
-    b = c;
-
-    cout << c << endl;
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int n, a, i;
+        
+        Scanner input = new Scanner(System.in);
+        System.out.println ("Deret Bilangan Fibonannci :");
+        n = input.nextInt();
+        
+        System.out.println("Output : ");
+        for(i=0; i<n ; i++){
+           System.out.println(i+ "");
+        }
+        
+        int total = i;
+        if (i % 2 == 0 ){
+            System.out.println(i);
+            total = total + i;
+        }
+ 
+        
     }
-
-    }
+}
