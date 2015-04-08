@@ -33,6 +33,7 @@ public class DeretFibonannci {
         int total = i;
         if (i % 2 == 0 ){
             System.out.println(i);
+ System.out.println(i);            
             total = total + i;
         }
  
